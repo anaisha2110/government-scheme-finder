@@ -260,8 +260,7 @@ st.set_page_config(
 )
 
 DB_NAME = "schemes.db"
-import os
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "")
+ADMIN_PASSWORD = st.secrets["ADMIN_PASSWORD"]
 
 
 STATES = [
