@@ -1,5 +1,5 @@
 import html
-import sqlite3
+from supabase import create_client, Client
 from urllib.parse import urlparse
 from io import BytesIO
 
